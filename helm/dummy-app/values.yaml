@@ -1,0 +1,17 @@
+# Default values for dummy-app
+# NOTE: image.repository and image.tag are intentionally not set here.
+# Harness injects the full image path at runtime via <+artifact.image>
+
+replicaCount: 1
+
+image:
+  # This will be overridden by Harness using <+artifact.image>
+  repository: ""
+  tag: ""
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}
