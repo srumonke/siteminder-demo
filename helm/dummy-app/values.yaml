@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: <+artifacts.primary.imagePath>
-  tag: <+artifacts.primary.tag>
+  repository: <+artifacts.primary.image>
+  tag: ""
   pullPolicy: IfNotPresent
 
 service:
