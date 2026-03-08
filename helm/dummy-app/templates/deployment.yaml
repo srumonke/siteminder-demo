@@ -18,7 +18,7 @@ spec:
         - name: dummy-app
           # Harness resolves this expression at runtime to the full ECR image path + selected tag
           # e.g. 664418987337.dkr.ecr.us-west-2.amazonaws.com/sruthi/dummy-example:a1b2c3d
-          image: <+artifact.image>
+          image: <+artifacts.primary.image>
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
