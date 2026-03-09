@@ -1,3 +1,3 @@
 FROM nginx:alpine
-RUN echo "<html><body><h1>Dummy App - Harness Demo Siteminder</h1><p>Image tag: ${IMAGE_TAG}</p></body></html>" > /usr/share/nginx/html/index.html
+RUN echo "<html><body><h1>Dummy App - Harness Demo 2 Siteminder</h1><p>Image tag: ${IMAGE_TAG}</p></body></html>" > /usr/share/nginx/html/index.html
 EXPOSE 80
